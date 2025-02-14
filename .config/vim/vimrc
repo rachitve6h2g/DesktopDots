@@ -1,0 +1,8 @@
+set number
+set relativenumber
+syntax on
+colorscheme habamax
+inoremap jj <Esc>
+filetype plugin on
+filetype indent on
+

@@ -1,0 +1,37 @@
+ignore-empty-password
+show-failed-attempts
+daemonize
+fade-in=1
+disable-caps-lock-text
+image=$HOME/.local/share/backgrounds/anime_skull.png
+font=Iosevka Nerd Font
+
+text-ver-color=7daea3
+text-wrong-color=ea6962
+text-clear-color=50494585
+inside-color=00000000
+inside-ver-color=00000000
+inside-wrong-color=00000000
+inside-clear-color=00000000
+inside-caps-lock-color=00000000
+ring-color=2828284d
+ring-ver-color=7daea34d
+ring-wrong-color=ea69624d
+ring-clear-color=00000000
+line-color=00000000
+line-clear-color=00000000
+line-ver-color=00000000
+key-hl-color=a9b665ff
+bs-hl-color=d3869bff
+caps-lock-bs-hl-color=ea6962
+caps-lock-key-hl-color=ea6962
+separator-color=00000000
+
+scaling=fill
+indicator
+clock
+timestr=%I:%M %p
+datestr=%A, %d %B
+indicator-radius=200
+font-size=100
+text-color=ddc7a1

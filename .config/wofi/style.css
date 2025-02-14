@@ -1,0 +1,31 @@
+window {
+    margin: 5px;
+    border: 2px solid #d3869b;
+    background-color: #141617;
+}
+
+#input {
+    margin: 5px;
+    border: 2px solid #7daea3;
+    background-color: #1d2021;
+}
+
+#inner-box {
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #d8a657;
+    background-color: #282828;
+    border-radius: 10px;
+}
+
+#outer-box {
+    margin: 5px;
+    border: 2px solid #d8a657;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#text {
+    margin: 5px;
+    color: #ddc7a1;
+}
+

@@ -1,0 +1,11 @@
+bibata-cursor-theme-bin
+bluetuith-bin
+firefox-extension-arch-search
+gruvbox-plus-icon-theme-git
+paru
+paru-debug
+pwvucontrol
+swaylock-effects
+vscodium-bin
+xdg-terminal-exec-mkhl
+zsh-fast-syntax-highlighting
