@@ -33,3 +33,6 @@ alias -g -- ba="vim ~/.config/zsh/"
 
 # For neovim sql
 alias nvsql="nvim '+SQLua'"
+
+# For cd'ing back
+alias '..'="cd .."

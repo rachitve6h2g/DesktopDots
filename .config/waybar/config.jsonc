@@ -1,4 +1,4 @@
-// -*- mode: jsonc -*-
+// -*- submap: jsonc -*-
 {
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
@@ -9,9 +9,9 @@
     // Choose the order of the modules
     "modules-left": [
         "idle_inhibitor",
-        "sway/workspaces",
-        "sway/mode",
-        "sway/scratchpad",
+        "hyprland/workspaces",
+        "hyprland/submap",
+        "hyprland/scratchpad",
     ],
     "modules-center": [
         "clock",
@@ -26,14 +26,14 @@
         "tray",
     ],
     // Modules configuration
-    "sway/workspaces": {
+    "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "warp-on-scroll": false,
         "format": "{icon}",
         "format-icons": {
             "urgent": " ",
-            "focused": " ",
+            "active": " ",
             "default": " "
         },
         "persistent-workspaces": {
@@ -51,10 +51,10 @@
             "unlocked": " "
         }
     },
-    "sway/mode": {
+    "hyprland/submap": {
         "format": "<span style=\"italic\">{}</span>"
     },
-    "sway/scratchpad": {
+    "hyprland/scratchpad": {
         "format": "{icon} {count}",
         "show-empty": false,
         "format-icons": ["", " "],

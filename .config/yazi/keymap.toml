@@ -10,4 +10,8 @@ prepend_keymap = [
 
   # For going to the USB directory
   { on = [ "g", "m" ], run = "cd /run/media/chris", desc = "Got the mounted usb media" },
+
+  # Just for restoring a deleted file/folder
+  { on = "u", run = "plugin restore", desc = "Restore from trash"},
+  
 ]

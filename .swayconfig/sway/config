@@ -287,19 +287,20 @@ for_window [title = "Administrator privileges required"] floating enable
 
 for_window [title = "About Mozilla Firefox"] floating enable
 for_window [window_role = "About"] floating enable
-for_window [app_id="firefox" title="Library"] floating enable, border pixel 1, sticky enable
-for_window [app_id="org.nickvision.tubeconverter" title="Parabolic"] floating enable, border pixel 1
-for_window [app_id="firefox" title="Picture-in-Picture"] floating enable, border pixel 1, sticky enable, resize set width 50px height 50px
-for_window [app_id="uget-gtk"] floating enable, border pixel 1
+for_window [app_id="firefox" title="Library"] floating enable, border normal, sticky enable
+for_window [app_id="org.nickvision.tubeconverter" title="Parabolic"] floating enable, border normal
+for_window [app_id="firefox" title="Picture-in-Picture"] floating enable, border normal, sticky enable, resize set width 50px height 50px
+for_window [app_id="uget-gtk"] floating enable, border normal
 
-for_window [class="VirtualBoxVM" title="Create Virtual Machine"] floating enable, border pixel 1
-for_window [class="VirtualBoxVM" title="Archlinux-Soft Keyboard"] floating enable, border pixel 1
-for_window [app_id="thunar" title="File Operation Progress"] floating enable, border pixel 1
+for_window [class="VirtualBoxVM" title="Create Virtual Machine"] floating enable, border normal
+for_window [class="VirtualBoxVM" title="Archlinux-Soft Keyboard"] floating enable, border normal
+for_window [app_id="thunar" title="File Operation Progress"] floating enable, border normal
+for_window [app_id="thunar" title="%Thunar%"] floating enable
 
-for_window [app_id="nm-connection-editor"] floating enable, border pixel 1, resize set width 600 height 400
-for_window [app_id="org.pulseaudio.pavucontrol"] floating enable, border pixel 1, resize set width 820 height 640
+for_window [app_id="nm-connection-editor"] floating enable, border normal, resize set width 600 height 400
+for_window [app_id="org.pulseaudio.pavucontrol"] floating enable, border normal, resize set width 820 height 640
 
-for_window [title="Open Folder"] floating enable, border pixel 1, resize set width 893 height 575
+for_window [title="Open Folder"] floating enable, border normal, resize set width 893 height 575
 
 for_window [app_id="org.pwmt.zathura"] inhibit_idle visible
 

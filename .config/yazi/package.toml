@@ -23,6 +23,11 @@ use = "kirasok/epub-preview"
 rev = "77a76b8"
 hash = "9aed469134b5c89fc4014ce278307ae3"
 
+[[plugin.deps]]
+use = "boydaihungst/restore"
+rev = "89fddfd"
+hash = "b442aa672e07ec0765b4b00e7bfdc9b5"
+
 [[flavor.deps]]
 use = "bennyyip/gruvbox-dark"
 rev = "b4cc9f2"
