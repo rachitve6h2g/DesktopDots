@@ -1,8 +1,0 @@
-2025-02-20 00:18:07.748 [info] Getting Manifest... jdinhlife.gruvbox
-2025-02-20 00:18:11.207 [info] Installing extension: jdinhlife.gruvbox {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/chris/.vscode-oss/extensions/extensions.json","path":"/home/chris/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.97.2","date":"2025-02-14T18:21:12.766Z"}}
-2025-02-20 00:18:16.519 [info] Extracted extension to file:///home/chris/.vscode-oss/extensions/jdinhlife.gruvbox-1.22.0-universal: jdinhlife.gruvbox
-2025-02-20 00:18:16.522 [info] Renamed to /home/chris/.vscode-oss/extensions/jdinhlife.gruvbox-1.22.0-universal
-2025-02-20 00:18:16.550 [info] Extension installed successfully: jdinhlife.gruvbox vscode-userdata:/home/chris/.vscode-oss/extensions/extensions.json
-2025-02-20 00:18:33.391 [info] Uninstalling extension from the profile: jdinhlife.gruvbox@1.22.0 vscode-userdata:/home/chris/.vscode-oss/extensions/extensions.json
-2025-02-20 00:18:33.420 [info] Marked extension as removed jdinhlife.gruvbox-1.22.0
-2025-02-20 00:18:34.547 [info] Successfully uninstalled extension from the profile jdinhlife.gruvbox@1.22.0 vscode-userdata:/home/chris/.vscode-oss/extensions/extensions.json

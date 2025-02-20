@@ -1,5 +1,0 @@
-2025-02-20 12:42:19.964 [error] #1: https://open-vsx.org/vscode/gallery/mtxr/sqltools/latest - error GET Failed to fetch
-2025-02-20 12:42:29.179 [error] #2: https://open-vsx.org/vscode/gallery/mtxr/sqltools-driver-pg/latest - error GET Fetch timeout: 10000ms
-2025-02-20 12:42:29.181 [error] #3: https://open-vsx.org/vscode/gallery/sainnhe/gruvbox-material/latest - error GET Fetch timeout: 10000ms
-2025-02-20 12:42:29.182 [error] #4: https://open-vsx.org/vscode/gallery/vscodevim/vim/latest - error GET Fetch timeout: 10000ms
-2025-02-20 12:44:32.781 [error] #5: https://open-vsx.org/vscode/gallery/extensionquery - error POST Failed to fetch
