@@ -20,40 +20,44 @@ set $term exec uwsm app -T
 # Your preferred application launcher
 set $menu killall wofi || exec uwsm app -- $(wofi --show drun --define=drun-print_desktop_file=true)
 
+# For networkmanager menu
+set $networkmanager killall nm-connection-editor || exec uwsm app -- nm-connection-editor.desktop
+
 set $clipboard killall wofi || exec cliphist list | wofi -S dmenu | cliphist decode | wl-copy
 # Gtk theming and stuff here
 set $gnome-schema org.gnome.desktop.interface
+set $gnome-wm org.gnome.desktop.wm.preferences
+set $gnome-sound org.gnome.desktop.sound
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Gruvbox-Yellow-Dark'
 	gsettings set $gnome-schema icon-theme 'Gruvbox-Plus-Dark'
 	gsettings set $gnome-schema cursor-theme 'Bibata-Modern-Classic'
-	gsettings set $gnome-schema font-name 'JetBrainsMonoNerdFont 10'
+	gsettings set $gnome-schema font-name 'IosevkaTermNerdFont 10'
+	gsettings set $gnome-wm button-layout ""
+	gsettings set $gnome-sound theme-name "freedesktop"
+	gsettings set $gnome-sound input-feedback-sounds true
+	gsettings set $gnome-sound event-sounds true
 }
 seat seat0 xcursor_theme Bibata-Modern-Classic 24
+
+# Play the startup sound
+exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 80%
+exec mpv $HOME/.config/sway/soft-startup-sound-269291.mp3
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg $HOME/.local/share/backgrounds/anime_skull.png fill
+# output * bg $HOME/.local/share/backgrounds/Sif.png fill
+
+# Or set a random wallpaper
+set $wallpapers_path $HOME/.local/share/backgrounds/sway
+output * bg $(find $wallpapers_path -type f | shuf -n 1) fill
 #
 # Example configuration:
 #
 #   output HDMI-A-1 resolution 1920x1080 position 1920,0
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
-
-### Idle configuration
-#
-# Example configuration:
-#
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
-# resumed. It will also lock your screen before your computer goes to sleep.
 
 ### Input configuration
 input "type:touchpad" {
@@ -92,7 +96,7 @@ input "type:touchpad" {
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'exec loginctl terminate-session "$XDG_SESSION_ID"'
+    bindsym $mod+m exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'exec loginctl terminate-session "$XDG_SESSION_ID"'
 #
 # Moving around:
 #
@@ -161,7 +165,7 @@ input "type:touchpad" {
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
     bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
+    bindsym $mod+Shift+Return layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
@@ -210,7 +214,7 @@ bindsym $mod+r mode "resize"
     # Special keys to adjust volume via PulseAudio
     bindsym --locked XF86AudioMute exec wpctl set-mute \@DEFAULT_AUDIO_SINK@ toggle
     bindsym --locked XF86AudioLowerVolume exec wpctl set-volume \@DEFAULT_AUDIO_SINK@ 5%-
-    bindsym --locked XF86AudioRaiseVolume exec wpctl set-volume \@DEFAULT_AUDIO_SINK@ 5%+ -l 0.9
+    bindsym --locked XF86AudioRaiseVolume exec wpctl set-volume \@DEFAULT_AUDIO_SINK@ 5%+ -l 1
     bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
     # Special keys to adjust brightness via brightnessctl
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
@@ -222,7 +226,11 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86AudioPlay exec playerctl play-pause
     bindsym --locked XF86AudioPrev exec playerctl previous
     # Special key to take a screenshot with grim
-    bindsym Print exec grim
+    bindsym Print exec grimshot --notify save output
+    bindsym Shift+Print exec grimshot --notify save area
+    bindsym Alt+Print exec grimshot --notify save active
+
+
 
 #
 # Status Bar:
@@ -243,15 +251,15 @@ bindsym $mod+r mode "resize"
 # }
 
 # The looks matter
-default_border pixel 2
+default_border pixel 3
 gaps inner 10
 gaps outer 6
 
 # Make it more appealing 
 # target                 title       bg    text   indicator  border
-client.focused           #ddc7a1   #141617 #ddc7a1  #7daea3 #d8a657
-client.focused_inactive  #282828 #141617 #ddc7a1  #7daea3 #282828
-client.unfocused         #282828 #141617 #ddc7a1  #7daea3 #282828
+client.focused           #ddc7a1   #141617 #ddc7a1 #45707a #6c782e
+client.focused_inactive  #282828 #141617 #ddc7a1  #45707a #282828
+client.unfocused         #282828 #141617 #ddc7a1  #45707a #282828
 client.urgent            #ea6962    #141617 #ea6962   #282828  #ea6962
 client.placeholder       #282828 #141617 #ddc7a1  #282828  #282828
 client.background        #141617
@@ -260,3 +268,39 @@ client.background        #141617
 include $HOME/.config/sway/config.d/*
 
 bindsym $mod+i exec exec uwsm app -- firefox.desktop
+bindsym $mod+Shift+i exec exec uwsm app -- org.qutebrowser.qutebrowser.desktop
+bindsym $mod+e exec exec uwsm app -- thunar.desktop
+bindsym $mod+Shift+e exec exec uwsm app -- yazi.desktop
+bindsym $mod+Shift+d exec $networmanager
+
+# Window rules from Gentoo wiki on sway
+for_window [window_role = "pop-up"] floating enable
+for_window [window_role = "bubble"] floating enable
+for_window [window_role = "dialog"] floating enable
+for_window [window_type = "dialog"] floating enable
+for_window [window_role = "task_dialog"] floating enable
+for_window [window_type = "menu"] floating enable
+for_window [app_id = "floating"] floating enable
+for_window [app_id = "floating_update"] floating enable, resize set width 1000px height 600px
+for_window [class = "(?i)pinentry"] floating enable
+for_window [title = "Administrator privileges required"] floating enable
+
+for_window [title = "About Mozilla Firefox"] floating enable
+for_window [window_role = "About"] floating enable
+for_window [app_id="firefox" title="Library"] floating enable, border pixel 1, sticky enable
+for_window [app_id="org.nickvision.tubeconverter" title="Parabolic"] floating enable, border pixel 1
+for_window [app_id="firefox" title="Picture-in-Picture"] floating enable, border pixel 1, sticky enable, resize set width 50px height 50px
+for_window [app_id="uget-gtk"] floating enable, border pixel 1
+
+for_window [class="VirtualBoxVM" title="Create Virtual Machine"] floating enable, border pixel 1
+for_window [class="VirtualBoxVM" title="Archlinux-Soft Keyboard"] floating enable, border pixel 1
+for_window [app_id="thunar" title="File Operation Progress"] floating enable, border pixel 1
+
+for_window [app_id="nm-connection-editor"] floating enable, border pixel 1, resize set width 600 height 400
+for_window [app_id="org.pulseaudio.pavucontrol"] floating enable, border pixel 1, resize set width 820 height 640
+
+for_window [title="Open Folder"] floating enable, border pixel 1, resize set width 893 height 575
+
+for_window [app_id="org.pwmt.zathura"] inhibit_idle visible
+
+for_window [app_id="mpv"] inhibit_idle visible

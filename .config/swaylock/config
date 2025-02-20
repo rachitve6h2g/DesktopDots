@@ -1,9 +1,8 @@
 ignore-empty-password
 show-failed-attempts
 daemonize
-fade-in=1
-disable-caps-lock-text
-image=$HOME/.local/share/backgrounds/anime_skull.png
+indicator-caps-lock
+image=$HOME/.local/share/backgrounds/Arch_gruvbox.png
 font=Iosevka Nerd Font
 
 text-ver-color=7daea3

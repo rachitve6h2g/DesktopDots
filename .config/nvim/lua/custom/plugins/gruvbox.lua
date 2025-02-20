@@ -23,8 +23,8 @@ return {
 			for k, v in pairs(options) do
 				vim.g[k] = v
 			end
-			LineNumberColors()
 			vim.cmd.colorscheme("gruvbox-material")
+			LineNumberColors()
 		end,
 	},
 }

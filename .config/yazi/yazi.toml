@@ -1,0 +1,15 @@
+[plugin]
+prepend_previewers = [
+  { mime = "application/epub+zip", run = "epub-preview" },
+  { name = "*/", run = "eza-preview" },
+  { mime = "{audio,video,image}/*", run = "mediainfo"},
+  { mime = "application/subrip", run = "mediainfo" },
+]
+
+prepend_preloaders = [
+  { mime = "{audio,video,image}/*", run = "mediainfo" },
+  { mime = "application/subrip", run = "mediainfo" },
+]
+
+[manager]
+linemode = "size_and_mtime"

@@ -1,0 +1,9 @@
+[Default Applications]
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
+video/x-matroska=io.github.celluloid_player.Celluloid.desktop
+application/x-zerosize=vim.desktop
+image/png=imv-dir.desktop
+
+[Added Associations]
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+application/x-zerosize=vim.desktop;

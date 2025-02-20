@@ -1,0 +1,5 @@
+program_options:
+  notify: true
+  file_manager: xdg-open
+  automount: true
+  terminal: 'kitty -e'
