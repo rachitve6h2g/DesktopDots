@@ -1,4 +1,4 @@
-#files: 993	version: 5.9
+#files: 998	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -1439,6 +1439,11 @@ _comps=(
 'traceroute' '_hosts'
 'transmission-remote' '_transmission'
 'trap' '_trap'
+'trash' '_trash'
+'trash-empty' '_trash-empty'
+'trash-list' '_trash-list'
+'trash-put' '_trash-put'
+'trash-restore' '_trash-restore'
 'tree' '_tree'
 'trial' '_twisted'
 'trove' '_openstack'
@@ -1902,7 +1907,8 @@ autoload -Uz _afew _android _archlinux-java _artisan _atach \
             _subliminal _supervisorctl _svm _systemctl _systemd \
             _systemd-analyze _systemd-delta _systemd-inhibit _systemd-nspawn _systemd-path \
             _systemd-run _systemd-tmpfiles _teamocil _thor _timedatectl \
-            _tmuxinator _tox _tsc _ts-node _udevadm \
+            _tmuxinator _tox _trash _trash-empty _trash-list \
+            _trash-put _trash-restore _tsc _ts-node _udevadm \
             _udiskie _udiskie-canonical_paths _udiskie-mount _udiskie-umount _udisks2 \
             _udisksctl _ufw _updpkgsums _upower _varlinkctl \
             _virtualbox _vnstat _wemux _wg-quick _wl-copy \

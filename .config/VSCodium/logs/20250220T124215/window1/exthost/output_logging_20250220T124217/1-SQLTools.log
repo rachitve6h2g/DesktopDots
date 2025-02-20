@@ -1,0 +1,815 @@
+[1740035537623] INFO  (ext): SQLTools is starting
+[1740035537625] INFO  (ext): initializing language client...
+[1740035537626] INFO  (ext): Registering client for languages [{"scheme":"sqltools"},{"language":"sql","scheme":"untitled"},{"language":"sql","scheme":"file"},{"language":"sql","scheme":"sqltools"}]
+    ns: "lc"
+[1740035537631] INFO  (ext): loading plugins...
+[1740035537632] INFO  (ext): registering Formatter Plugin.
+    plugin: {
+      "name": "Formatter Plugin"
+    }
+[1740035537632] INFO  (ext): registering Connection Manager Plugin.
+    plugin: {
+      "name": "Connection Manager Plugin"
+    }
+[1740035537632] INFO  (ext): registering CodeLens Plugin.
+    plugin: {
+      "name": "CodeLens Plugin",
+      "registeredLanguages": []
+    }
+[1740035537636] INFO  (ext): registering Dependency Manager Plugin.
+    plugin: {
+      "name": "Dependency Manager Plugin",
+      "installingDrivers": []
+    }
+[1740035537638] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740035537639] INFO  (ext): registering History Manager Plugin.
+    plugin: {
+      "name": "History Manager Plugin"
+    }
+[1740035537639] INFO  (ext): registering Bookmarks Manager Plugin.
+    plugin: {
+      "name": "Bookmarks Manager Plugin"
+    }
+[1740035537641] INFO  (ext): registering Authentication Provider Plugin.
+    plugin: {
+      "name": "Authentication Provider Plugin",
+      "isRegistered": false
+    }
+[1740035537641] INFO  (ext): registering Object Drop-in Provider (plugin).
+    plugin: {
+      "type": "plugin",
+      "name": "Object Drop-in Provider",
+      "isRegistered": false
+    }
+[1740035537642] INFO  (ext): SQLTools activation completed. 18.914356 ms
+[1740035537642] INFO  (ext): Formatter Plugin registered!
+[1740035537642] INFO  (ext): CodeLens Plugin registered!
+[1740035537642] INFO  (ext): Dependency Manager Plugin registered!
+[1740035537643] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035537643] INFO  (ext): Connection Manager Plugin registered!
+[1740035537643] INFO  (ext): History Manager Plugin registered!
+[1740035537643] INFO  (ext): Bookmarks Manager Plugin registered!
+[1740035537643] INFO  (ext): Authentication Provider Plugin registered!
+[1740035537643] INFO  (ext): Object Drop-in Provider (plugin) registered!
+[1740035537705] INFO  (ext): registering PostgreSQL/Cockroach Plugin (driver).
+    plugin: {
+      "extensionId": "mtxr.sqltools-driver-pg",
+      "name": "PostgreSQL/Cockroach Plugin",
+      "type": "driver"
+    }
+[1740035537933] INFO  (ls): SQLTools Server started!
+===============================
+Using node runtime?: no
+ExecPath: /opt/vscodium-bin/codium 
+===============================
+[1740035537940] INFO  (ext): LanguageClient ready
+    ns: "lc"
+[1740035537938] INFO  (ls): Initialized with node version:v20.18.1
+[1740035537942] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035537942] INFO  (ls): REQUEST RECEIVED => ls/RegisterPlugin
+[1740035537943] INFO  (ls): request to register plugin: "/home/chris/.vscode-oss/extensions/mtxr.sqltools-driver-pg-0.5.5-universal/out/ls/plugin.js"
+[1740035538005] INFO  (ls): Driver postgresql registered!
+    place: "driver-map"
+    ns: "ls-context"
+[1740035538005] INFO  (ls): Driver aws redshift registered!
+    place: "driver-map"
+    ns: "ls-context"
+[1740035538005] INFO  (ls): Driver cockroachdb registered!
+    place: "driver-map"
+    ns: "ls-context"
+[1740035538030] INFO  (ext): PostgreSQL/Cockroach Plugin (driver) registered!
+[1740035539031] INFO  (ext): EXECUTING COMMAND => sqltools.refreshTree
+[1740035539032] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740035539640] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740035819257] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035819258] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035819260] INFO  (ls): REQUEST RECEIVED => connection/ConnectRequest
+[1740035819262] INFO  (ls): Connection instance created for Test.
+    ns: "conn-manager"
+[1740035819288] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740035829604] INFO  (ls): completion requested {"line":0,"character":1}
+    ns: "intellisense"
+[1740035832764] INFO  (ls): completion requested {"line":0,"character":1}
+    ns: "intellisense"
+[1740035833997] INFO  (ls): completion requested {"line":0,"character":7}
+    ns: "intellisense"
+[1740035838877] INFO  (ls): completion requested {"line":0,"character":12}
+    ns: "intellisense"
+[1740035838879] INFO  (ls): got got %d db completions
+    ns: "intellisense"
+[1740035838915] INFO  (ls): got 11 table completions
+    ns: "intellisense"
+[1740035844270] INFO  (ls): completion requested {"line":0,"character":23}
+    ns: "intellisense"
+[1740035867582] INFO  (ls): completion requested {"line":0,"character":1}
+    ns: "intellisense"
+[1740035869363] INFO  (ls): completion requested {"line":0,"character":7}
+    ns: "intellisense"
+[1740035869390] INFO  (ls): got got %d db completions
+    ns: "intellisense"
+[1740035869397] INFO  (ls): got 11 table completions
+    ns: "intellisense"
+[1740035871160] INFO  (ls): completion requested {"line":0,"character":9}
+    ns: "intellisense"
+[1740035871161] INFO  (ls): got got %d db completions
+    ns: "intellisense"
+[1740035871166] INFO  (ls): got 11 table completions
+    ns: "intellisense"
+[1740035871818] INFO  (ls): completion requested {"line":0,"character":14}
+    ns: "intellisense"
+[1740035871820] INFO  (ls): got got %d db completions
+    ns: "intellisense"
+[1740035871823] INFO  (ls): got 11 table completions
+    ns: "intellisense"
+[1740035878035] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740035878036] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035878040] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035878040] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035878043] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740035878043] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035878044] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035878551] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035878552] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035878556] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740035882666] INFO  (ls): completion requested {"line":0,"character":1}
+    ns: "intellisense"
+[1740035882882] INFO  (ls): completion requested {"line":0,"character":2}
+    ns: "intellisense"
+[1740035882987] INFO  (ls): completion requested {"line":0,"character":3}
+    ns: "intellisense"
+[1740035884049] INFO  (ls): completion requested {"line":0,"character":1}
+    ns: "intellisense"
+[1740035884819] INFO  (ls): completion requested {"line":0,"character":7}
+    ns: "intellisense"
+[1740035886479] INFO  (ls): completion requested {"line":0,"character":12}
+    ns: "intellisense"
+[1740035886480] INFO  (ls): got got %d db completions
+    ns: "intellisense"
+[1740035886484] INFO  (ls): got 11 table completions
+    ns: "intellisense"
+[1740035888594] INFO  (ls): completion requested {"line":0,"character":23}
+    ns: "intellisense"
+[1740035891961] INFO  (ls): completion requested {"line":0,"character":30}
+    ns: "intellisense"
+[1740035908828] INFO  (ls): completion requested {"line":0,"character":36}
+    ns: "intellisense"
+[1740035917603] INFO  (ls): completion requested {"line":0,"character":46}
+    ns: "intellisense"
+[1740035925035] INFO  (ls): completion requested {"line":0,"character":52}
+    ns: "intellisense"
+[1740035925128] INFO  (ls): completion requested {"line":0,"character":53}
+    ns: "intellisense"
+[1740035926509] INFO  (ls): completion requested {"line":0,"character":57}
+    ns: "intellisense"
+[1740035929564] INFO  (ls): completion requested {"line":0,"character":60}
+    ns: "intellisense"
+[1740035939921] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740035939922] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035939927] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035939927] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035939930] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740035939931] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035939931] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035940437] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035940438] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035940443] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740035946887] INFO  (ls): completion requested {"line":0,"character":37}
+    ns: "intellisense"
+[1740035965590] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740035965590] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035965595] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035965595] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035965599] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740035965599] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035965599] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035966105] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035966106] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035966111] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740035969220] INFO  (ls): completion requested {"line":1,"character":1}
+    ns: "intellisense"
+[1740035969353] INFO  (ls): completion requested {"line":1,"character":2}
+    ns: "intellisense"
+[1740035969453] INFO  (ls): completion requested {"line":1,"character":3}
+    ns: "intellisense"
+[1740035969552] INFO  (ls): completion requested {"line":1,"character":4}
+    ns: "intellisense"
+[1740035969701] INFO  (ls): completion requested {"line":1,"character":5}
+    ns: "intellisense"
+[1740035969922] INFO  (ls): completion requested {"line":1,"character":6}
+    ns: "intellisense"
+[1740035969984] INFO  (ls): completion requested {"line":1,"character":7}
+    ns: "intellisense"
+[1740035970491] INFO  (ls): completion requested {"line":1,"character":8}
+    ns: "intellisense"
+[1740035971458] INFO  (ls): completion requested {"line":1,"character":9}
+    ns: "intellisense"
+[1740035971551] INFO  (ls): completion requested {"line":1,"character":10}
+    ns: "intellisense"
+[1740035971733] INFO  (ls): completion requested {"line":1,"character":11}
+    ns: "intellisense"
+[1740035971800] INFO  (ls): completion requested {"line":1,"character":12}
+    ns: "intellisense"
+[1740035971866] INFO  (ls): completion requested {"line":1,"character":13}
+    ns: "intellisense"
+[1740035971926] INFO  (ls): completion requested {"line":1,"character":14}
+    ns: "intellisense"
+[1740035972600] INFO  (ls): completion requested {"line":1,"character":15}
+    ns: "intellisense"
+[1740035974964] INFO  (ls): completion requested {"line":1,"character":15}
+    ns: "intellisense"
+[1740035975618] INFO  (ls): completion requested {"line":1,"character":15}
+    ns: "intellisense"
+[1740035980986] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740035980987] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035980991] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035980991] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035980994] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740035980995] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035980995] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035981501] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035981501] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035981505] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740035990551] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740035990552] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035990557] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035990557] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035990561] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740035990561] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035990561] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035991068] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740035991068] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740035991074] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740036013438] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740036013439] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036013443] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036013444] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036013447] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740036013447] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036013447] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036013953] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036013954] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036013959] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740036041322] INFO  (ls): completion requested {"line":0,"character":1}
+    ns: "intellisense"
+[1740036041553] INFO  (ls): completion requested {"line":0,"character":3}
+    ns: "intellisense"
+[1740036041653] INFO  (ls): completion requested {"line":0,"character":4}
+    ns: "intellisense"
+[1740036043983] INFO  (ls): completion requested {"line":0,"character":1}
+    ns: "intellisense"
+[1740036044400] INFO  (ls): completion requested {"line":0,"character":1}
+    ns: "intellisense"
+[1740036044649] INFO  (ls): completion requested {"line":0,"character":3}
+    ns: "intellisense"
+[1740036045865] INFO  (ls): completion requested {"line":0,"character":2}
+    ns: "intellisense"
+[1740036046814] INFO  (ls): completion requested {"line":0,"character":3}
+    ns: "intellisense"
+[1740036048379] INFO  (ls): completion requested {"line":0,"character":1}
+    ns: "intellisense"
+[1740036048479] INFO  (ls): completion requested {"line":0,"character":2}
+    ns: "intellisense"
+[1740036048561] INFO  (ls): completion requested {"line":0,"character":3}
+    ns: "intellisense"
+[1740036049227] INFO  (ls): completion requested {"line":0,"character":2}
+    ns: "intellisense"
+[1740036049378] INFO  (ls): completion requested {"line":0,"character":3}
+    ns: "intellisense"
+[1740036049402] INFO  (ls): completion requested {"line":0,"character":4}
+    ns: "intellisense"
+[1740036049762] INFO  (ls): completion requested {"line":0,"character":5}
+    ns: "intellisense"
+[1740036049860] INFO  (ls): completion requested {"line":0,"character":6}
+    ns: "intellisense"
+[1740036049953] INFO  (ls): completion requested {"line":0,"character":7}
+    ns: "intellisense"
+[1740036056800] INFO  (ls): completion requested {"line":0,"character":9}
+    ns: "intellisense"
+[1740036057942] INFO  (ls): completion requested {"line":0,"character":10}
+    ns: "intellisense"
+[1740036058069] INFO  (ls): completion requested {"line":0,"character":11}
+    ns: "intellisense"
+[1740036058101] INFO  (ls): completion requested {"line":0,"character":12}
+    ns: "intellisense"
+[1740036058151] INFO  (ls): completion requested {"line":0,"character":13}
+    ns: "intellisense"
+[1740036058270] INFO  (ls): completion requested {"line":0,"character":14}
+    ns: "intellisense"
+[1740036059118] INFO  (ls): completion requested {"line":0,"character":11}
+    ns: "intellisense"
+[1740036059218] INFO  (ls): completion requested {"line":0,"character":12}
+    ns: "intellisense"
+[1740036059258] INFO  (ls): completion requested {"line":0,"character":13}
+    ns: "intellisense"
+[1740036059281] INFO  (ls): completion requested {"line":0,"character":14}
+    ns: "intellisense"
+[1740036060307] INFO  (ls): completion requested {"line":0,"character":15}
+    ns: "intellisense"
+[1740036060401] INFO  (ls): completion requested {"line":0,"character":16}
+    ns: "intellisense"
+[1740036060535] INFO  (ls): completion requested {"line":0,"character":17}
+    ns: "intellisense"
+[1740036060683] INFO  (ls): completion requested {"line":0,"character":18}
+    ns: "intellisense"
+[1740036060767] INFO  (ls): completion requested {"line":0,"character":19}
+    ns: "intellisense"
+[1740036061217] INFO  (ls): completion requested {"line":0,"character":20}
+    ns: "intellisense"
+[1740036064515] INFO  (ls): completion requested {"line":0,"character":15}
+    ns: "intellisense"
+[1740036064567] INFO  (ls): completion requested {"line":0,"character":16}
+    ns: "intellisense"
+[1740036066501] INFO  (ls): completion requested {"line":0,"character":17}
+    ns: "intellisense"
+[1740036066696] INFO  (ls): completion requested {"line":0,"character":18}
+    ns: "intellisense"
+[1740036066850] INFO  (ls): completion requested {"line":0,"character":19}
+    ns: "intellisense"
+[1740036066961] INFO  (ls): completion requested {"line":0,"character":20}
+    ns: "intellisense"
+[1740036067581] INFO  (ls): completion requested {"line":0,"character":21}
+    ns: "intellisense"
+[1740036067812] INFO  (ls): completion requested {"line":0,"character":22}
+    ns: "intellisense"
+[1740036068059] INFO  (ls): completion requested {"line":0,"character":23}
+    ns: "intellisense"
+[1740036068126] INFO  (ls): completion requested {"line":0,"character":24}
+    ns: "intellisense"
+[1740036068259] INFO  (ls): completion requested {"line":0,"character":25}
+    ns: "intellisense"
+[1740036068756] INFO  (ls): completion requested {"line":0,"character":25}
+    ns: "intellisense"
+[1740036070115] INFO  (ls): completion requested {"line":0,"character":26}
+    ns: "intellisense"
+[1740036070191] INFO  (ls): completion requested {"line":0,"character":27}
+    ns: "intellisense"
+[1740036070291] INFO  (ls): completion requested {"line":0,"character":28}
+    ns: "intellisense"
+[1740036070374] INFO  (ls): completion requested {"line":0,"character":29}
+    ns: "intellisense"
+[1740036070474] INFO  (ls): completion requested {"line":0,"character":30}
+    ns: "intellisense"
+[1740036070556] INFO  (ls): completion requested {"line":0,"character":31}
+    ns: "intellisense"
+[1740036072272] INFO  (ls): completion requested {"line":0,"character":32}
+    ns: "intellisense"
+[1740036072339] INFO  (ls): completion requested {"line":0,"character":33}
+    ns: "intellisense"
+[1740036077085] INFO  (ls): completion requested {"line":0,"character":40}
+    ns: "intellisense"
+[1740036077224] INFO  (ls): completion requested {"line":0,"character":41}
+    ns: "intellisense"
+[1740036083105] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740036083106] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036083110] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036083111] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036083115] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740036083115] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036083115] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036083620] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036083621] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036083625] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740036096021] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740036096022] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036096025] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036096025] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036096028] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740036096029] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036096029] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036096533] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036096533] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036096537] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740036103553] INFO  (ls): completion requested {"line":0,"character":32}
+    ns: "intellisense"
+[1740036105221] INFO  (ls): completion requested {"line":0,"character":34}
+    ns: "intellisense"
+[1740036107153] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740036107154] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036107159] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036107159] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036107162] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740036107163] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036107163] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036107669] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036107670] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036107675] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740036142223] INFO  (ls): completion requested {"line":0,"character":1}
+    ns: "intellisense"
+[1740036143001] INFO  (ls): completion requested {"line":0,"character":7}
+    ns: "intellisense"
+[1740036143002] INFO  (ls): got got %d db completions
+    ns: "intellisense"
+[1740036143014] INFO  (ls): got 11 table completions
+    ns: "intellisense"
+[1740036144771] INFO  (ls): completion requested {"line":0,"character":9}
+    ns: "intellisense"
+[1740036144772] INFO  (ls): got got %d db completions
+    ns: "intellisense"
+[1740036144775] INFO  (ls): got 11 table completions
+    ns: "intellisense"
+[1740036145271] INFO  (ls): completion requested {"line":0,"character":14}
+    ns: "intellisense"
+[1740036145624] INFO  (ls): completion requested {"line":0,"character":15}
+    ns: "intellisense"
+[1740036145672] INFO  (ls): completion requested {"line":0,"character":16}
+    ns: "intellisense"
+[1740036145924] INFO  (ls): completion requested {"line":0,"character":17}
+    ns: "intellisense"
+[1740036146054] INFO  (ls): completion requested {"line":0,"character":18}
+    ns: "intellisense"
+[1740036148370] INFO  (ls): completion requested {"line":0,"character":15}
+    ns: "intellisense"
+[1740036148429] INFO  (ls): completion requested {"line":0,"character":16}
+    ns: "intellisense"
+[1740036148901] INFO  (ls): completion requested {"line":0,"character":17}
+    ns: "intellisense"
+[1740036155585] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest
+[1740036157802] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest
+[1740036158529] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest
+[1740036159185] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest
+[1740036159530] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest
+[1740036159784] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest
+[1740036162264] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest
+[1740036163531] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest
+[1740036164610] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036164612] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036164614] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest
+[1740036164677] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036164677] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036164684] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740036166819] INFO  (ls): completion requested {"line":0,"character":17}
+    ns: "intellisense"
+[1740036166871] INFO  (ls): completion requested {"line":0,"character":18}
+    ns: "intellisense"
+[1740036167603] INFO  (ls): completion requested {"line":0,"character":17}
+    ns: "intellisense"
+[1740036168981] INFO  (ls): completion requested {"line":0,"character":17}
+    ns: "intellisense"
+[1740036169798] INFO  (ls): completion requested {"line":0,"character":17}
+    ns: "intellisense"
+[1740036170420] INFO  (ls): completion requested {"line":0,"character":18}
+    ns: "intellisense"
+[1740036170587] INFO  (ls): completion requested {"line":0,"character":19}
+    ns: "intellisense"
+[1740036170632] INFO  (ls): completion requested {"line":0,"character":20}
+    ns: "intellisense"
+[1740036170897] INFO  (ls): completion requested {"line":0,"character":21}
+    ns: "intellisense"
+[1740036171146] INFO  (ls): completion requested {"line":0,"character":22}
+    ns: "intellisense"
+[1740036171370] INFO  (ls): completion requested {"line":0,"character":23}
+    ns: "intellisense"
+[1740036171468] INFO  (ls): completion requested {"line":0,"character":24}
+    ns: "intellisense"
+[1740036179548] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740036179549] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036179552] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036179553] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036179556] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740036179556] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036179556] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036180063] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036180064] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036180068] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740036194675] INFO  (ls): completion requested {"line":1,"character":1}
+    ns: "intellisense"
+[1740036194914] INFO  (ls): completion requested {"line":1,"character":3}
+    ns: "intellisense"
+[1740036199585] INFO  (ls): completion requested {"line":1,"character":1}
+    ns: "intellisense"
+[1740036199786] INFO  (ls): completion requested {"line":1,"character":3}
+    ns: "intellisense"
+[1740036199904] INFO  (ls): completion requested {"line":1,"character":4}
+    ns: "intellisense"
+[1740036200185] INFO  (ls): completion requested {"line":1,"character":5}
+    ns: "intellisense"
+[1740036200274] INFO  (ls): completion requested {"line":1,"character":6}
+    ns: "intellisense"
+[1740036201735] INFO  (ls): completion requested {"line":1,"character":5}
+    ns: "intellisense"
+[1740036201772] INFO  (ls): completion requested {"line":1,"character":6}
+    ns: "intellisense"
+[1740036201842] INFO  (ls): completion requested {"line":1,"character":7}
+    ns: "intellisense"
+[1740036205566] INFO  (ls): completion requested {"line":1,"character":9}
+    ns: "intellisense"
+[1740036206446] INFO  (ls): completion requested {"line":1,"character":10}
+    ns: "intellisense"
+[1740036206716] INFO  (ls): completion requested {"line":1,"character":13}
+    ns: "intellisense"
+[1740036206847] INFO  (ls): completion requested {"line":1,"character":14}
+    ns: "intellisense"
+[1740036208181] INFO  (ls): completion requested {"line":1,"character":11}
+    ns: "intellisense"
+[1740036208365] INFO  (ls): completion requested {"line":1,"character":14}
+    ns: "intellisense"
+[1740036212291] INFO  (ls): completion requested {"line":1,"character":7}
+    ns: "intellisense"
+[1740036212524] INFO  (ls): completion requested {"line":1,"character":8}
+    ns: "intellisense"
+[1740036212589] INFO  (ls): completion requested {"line":1,"character":9}
+    ns: "intellisense"
+[1740036212639] INFO  (ls): completion requested {"line":1,"character":10}
+    ns: "intellisense"
+[1740036212706] INFO  (ls): completion requested {"line":1,"character":11}
+    ns: "intellisense"
+[1740036213543] INFO  (ls): completion requested {"line":1,"character":7}
+    ns: "intellisense"
+[1740036213631] INFO  (ls): completion requested {"line":1,"character":8}
+    ns: "intellisense"
+[1740036214084] INFO  (ls): completion requested {"line":1,"character":12}
+    ns: "intellisense"
+[1740036215423] INFO  (ls): completion requested {"line":1,"character":13}
+    ns: "intellisense"
+[1740036218401] INFO  (ls): completion requested {"line":1,"character":13}
+    ns: "intellisense"
+[1740036219385] INFO  (ls): completion requested {"line":1,"character":23}
+    ns: "intellisense"
+[1740036220218] INFO  (ls): completion requested {"line":1,"character":24}
+    ns: "intellisense"
+[1740036220327] INFO  (ls): completion requested {"line":1,"character":25}
+    ns: "intellisense"
+[1740036220402] INFO  (ls): completion requested {"line":1,"character":26}
+    ns: "intellisense"
+[1740036220467] INFO  (ls): completion requested {"line":1,"character":27}
+    ns: "intellisense"
+[1740036220584] INFO  (ls): completion requested {"line":1,"character":28}
+    ns: "intellisense"
+[1740036220799] INFO  (ls): completion requested {"line":1,"character":29}
+    ns: "intellisense"
+[1740036221651] INFO  (ls): completion requested {"line":1,"character":30}
+    ns: "intellisense"
+[1740036221705] INFO  (ls): completion requested {"line":1,"character":31}
+    ns: "intellisense"
+[1740036223364] INFO  (ls): completion requested {"line":1,"character":30}
+    ns: "intellisense"
+[1740036223398] INFO  (ls): completion requested {"line":1,"character":31}
+    ns: "intellisense"
+[1740036223517] INFO  (ls): completion requested {"line":1,"character":32}
+    ns: "intellisense"
+[1740036223581] INFO  (ls): completion requested {"line":1,"character":33}
+    ns: "intellisense"
+[1740036223664] INFO  (ls): completion requested {"line":1,"character":34}
+    ns: "intellisense"
+[1740036237500] INFO  (ext): EXECUTING COMMAND => sqltools.setSelection
+[1740036242415] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740036242416] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036242420] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036242421] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036242424] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740036242424] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036242425] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036242930] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036242930] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036242935] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740036252793] INFO  (ext): EXECUTING COMMAND => sqltools.setSelection
+[1740036260290] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740036260291] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036260295] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036260295] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036260298] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740036260299] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036260299] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036260805] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036260806] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036260810] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740036282442] INFO  (ls): completion requested {"line":0,"character":1}
+    ns: "intellisense"
+[1740036283212] INFO  (ls): completion requested {"line":0,"character":7}
+    ns: "intellisense"
+[1740036283214] INFO  (ls): got got %d db completions
+    ns: "intellisense"
+[1740036283224] INFO  (ls): got 11 table completions
+    ns: "intellisense"
+[1740036284665] INFO  (ls): completion requested {"line":0,"character":9}
+    ns: "intellisense"
+[1740036284665] INFO  (ls): got got %d db completions
+    ns: "intellisense"
+[1740036284668] INFO  (ls): got 11 table completions
+    ns: "intellisense"
+[1740036285091] INFO  (ls): completion requested {"line":0,"character":13}
+    ns: "intellisense"
+[1740036285092] INFO  (ls): got got %d db completions
+    ns: "intellisense"
+[1740036285094] INFO  (ls): got 0 table completions
+    ns: "intellisense"
+[1740036285196] INFO  (ls): completion requested {"line":0,"character":14}
+    ns: "intellisense"
+[1740036286206] INFO  (ls): completion requested {"line":0,"character":11}
+    ns: "intellisense"
+[1740036286207] INFO  (ls): got got %d db completions
+    ns: "intellisense"
+[1740036286209] INFO  (ls): got 0 table completions
+    ns: "intellisense"
+[1740036286433] INFO  (ls): completion requested {"line":0,"character":14}
+    ns: "intellisense"
+[1740036286434] INFO  (ls): got got %d db completions
+    ns: "intellisense"
+[1740036286438] INFO  (ls): got 11 table completions
+    ns: "intellisense"
+[1740036290507] INFO  (ls): completion requested {"line":0,"character":22}
+    ns: "intellisense"
+[1740036292458] INFO  (ls): completion requested {"line":0,"character":21}
+    ns: "intellisense"
+[1740036292459] INFO  (ls): got got %d db completions
+    ns: "intellisense"
+[1740036292462] INFO  (ls): got 1 table completions
+    ns: "intellisense"
+[1740036293817] INFO  (ls): completion requested {"line":1,"character":1}
+    ns: "intellisense"
+[1740036295264] INFO  (ls): completion requested {"line":0,"character":22}
+    ns: "intellisense"
+[1740036295465] INFO  (ls): completion requested {"line":0,"character":23}
+    ns: "intellisense"
+[1740036296467] INFO  (ls): completion requested {"line":0,"character":23}
+    ns: "intellisense"
+[1740036296798] INFO  (ls): completion requested {"line":0,"character":24}
+    ns: "intellisense"
+[1740036296979] INFO  (ls): completion requested {"line":0,"character":25}
+    ns: "intellisense"
+[1740036297114] INFO  (ls): completion requested {"line":0,"character":26}
+    ns: "intellisense"
+[1740036297196] INFO  (ls): completion requested {"line":0,"character":27}
+    ns: "intellisense"
+[1740036299127] INFO  (ls): completion requested {"line":0,"character":23}
+    ns: "intellisense"
+[1740036299228] INFO  (ls): completion requested {"line":0,"character":24}
+    ns: "intellisense"
+[1740036299401] INFO  (ls): completion requested {"line":0,"character":25}
+    ns: "intellisense"
+[1740036299576] INFO  (ls): completion requested {"line":0,"character":26}
+    ns: "intellisense"
+[1740036299681] INFO  (ls): completion requested {"line":0,"character":27}
+    ns: "intellisense"
+[1740036300132] INFO  (ls): completion requested {"line":0,"character":28}
+    ns: "intellisense"
+[1740036300310] INFO  (ls): completion requested {"line":0,"character":29}
+    ns: "intellisense"
+[1740036300933] INFO  (ls): completion requested {"line":0,"character":30}
+    ns: "intellisense"
+[1740036305906] INFO  (ls): completion requested {"line":0,"character":35}
+    ns: "intellisense"
+[1740036305907] INFO  (ls): got got %d db completions
+    ns: "intellisense"
+[1740036305916] INFO  (ls): got 11 table completions
+    ns: "intellisense"
+[1740036313160] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740036313161] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036313165] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036313166] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036313169] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740036313169] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036313170] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036313677] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036313678] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036313681] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740036644254] INFO  (ls): completion requested {"line":0,"character":1}
+    ns: "intellisense"
+[1740036645073] INFO  (ls): completion requested {"line":0,"character":1}
+    ns: "intellisense"
+[1740036645877] INFO  (ls): completion requested {"line":0,"character":1}
+    ns: "intellisense"
+[1740036646545] INFO  (ls): completion requested {"line":0,"character":5}
+    ns: "intellisense"
+[1740036646786] INFO  (ls): completion requested {"line":0,"character":6}
+    ns: "intellisense"
+[1740036646857] INFO  (ls): completion requested {"line":0,"character":7}
+    ns: "intellisense"
+[1740036647052] INFO  (ls): completion requested {"line":0,"character":8}
+    ns: "intellisense"
+[1740036647621] INFO  (ls): completion requested {"line":0,"character":9}
+    ns: "intellisense"
+[1740036647818] INFO  (ls): completion requested {"line":0,"character":10}
+    ns: "intellisense"
+[1740036648371] INFO  (ls): completion requested {"line":0,"character":11}
+    ns: "intellisense"
+[1740036648533] INFO  (ls): completion requested {"line":0,"character":12}
+    ns: "intellisense"
+[1740036648699] INFO  (ls): completion requested {"line":0,"character":13}
+    ns: "intellisense"
+[1740036648883] INFO  (ls): completion requested {"line":0,"character":14}
+    ns: "intellisense"
+[1740036648920] INFO  (ls): completion requested {"line":0,"character":15}
+    ns: "intellisense"
+[1740036649065] INFO  (ls): completion requested {"line":0,"character":17}
+    ns: "intellisense"
+[1740036650615] INFO  (ls): completion requested {"line":0,"character":18}
+    ns: "intellisense"
+[1740036650688] INFO  (ls): completion requested {"line":0,"character":19}
+    ns: "intellisense"
+[1740036650831] INFO  (ls): completion requested {"line":0,"character":20}
+    ns: "intellisense"
+[1740036650972] INFO  (ls): completion requested {"line":0,"character":21}
+    ns: "intellisense"
+[1740036651117] INFO  (ls): completion requested {"line":0,"character":22}
+    ns: "intellisense"
+[1740036651265] INFO  (ls): completion requested {"line":0,"character":23}
+    ns: "intellisense"
+[1740036651364] INFO  (ls): completion requested {"line":0,"character":24}
+    ns: "intellisense"
+[1740036651847] INFO  (ls): completion requested {"line":0,"character":25}
+    ns: "intellisense"
+[1740036652064] INFO  (ls): completion requested {"line":0,"character":26}
+    ns: "intellisense"
+[1740036652221] INFO  (ls): completion requested {"line":0,"character":27}
+    ns: "intellisense"
+[1740036652283] INFO  (ls): completion requested {"line":0,"character":28}
+    ns: "intellisense"
+[1740036655586] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740036655587] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036655591] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036655592] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036655595] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740036655595] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036655596] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036656102] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036656102] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036656108] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740036662773] INFO  (ls): completion requested {"line":0,"character":1}
+    ns: "intellisense"
+[1740036662907] INFO  (ls): completion requested {"line":0,"character":2}
+    ns: "intellisense"
+[1740036663027] INFO  (ls): completion requested {"line":0,"character":3}
+    ns: "intellisense"
+[1740036663105] INFO  (ls): completion requested {"line":0,"character":4}
+    ns: "intellisense"
+[1740036663936] INFO  (ls): completion requested {"line":0,"character":1}
+    ns: "intellisense"
+[1740036664686] INFO  (ls): completion requested {"line":0,"character":5}
+    ns: "intellisense"
+[1740036665285] INFO  (ls): completion requested {"line":0,"character":6}
+    ns: "intellisense"
+[1740036665374] INFO  (ls): completion requested {"line":0,"character":7}
+    ns: "intellisense"
+[1740036665753] INFO  (ls): completion requested {"line":0,"character":8}
+    ns: "intellisense"
+[1740036665919] INFO  (ls): completion requested {"line":0,"character":9}
+    ns: "intellisense"
+[1740036666051] INFO  (ls): completion requested {"line":0,"character":10}
+    ns: "intellisense"
+[1740036666635] INFO  (ls): completion requested {"line":0,"character":11}
+    ns: "intellisense"
+[1740036669137] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740036669137] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036669142] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036669142] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036669146] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740036669146] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036669146] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036669653] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036669654] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036669660] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740036672691] INFO  (ls): completion requested {"line":0,"character":11}
+    ns: "intellisense"
+[1740036674759] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740036674760] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036674764] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036674765] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036674768] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740036674769] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036674769] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036675274] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036675274] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036675279] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740036681838] INFO  (ls): completion requested {"line":0,"character":11}
+    ns: "intellisense"
+[1740036684454] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740036684455] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036684459] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036684459] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036684462] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740036684463] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036684463] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036684968] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740036684969] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740036684974] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740036692327] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest
+[1740036693969] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest
+[1740036694516] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest
+[1740036695059] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest
+[1740036695634] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest
+[1740036697242] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest
+[1740036699001] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest
+[1740036700745] INFO  (ls): REQUEST RECEIVED => connection/ReleaseResultsRequest

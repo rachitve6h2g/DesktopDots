@@ -1,0 +1,11 @@
+2025-02-20 01:49:24.768 [info] Getting Manifest... mtxr.sqltools
+2025-02-20 01:49:28.451 [info] Installing extension: mtxr.sqltools {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/chris/.vscode-oss/extensions/extensions.json","path":"/home/chris/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.97.2","date":"2025-02-14T18:21:12.766Z"}}
+2025-02-20 01:49:31.295 [info] Extracted extension to file:///home/chris/.vscode-oss/extensions/mtxr.sqltools-0.28.4-universal: mtxr.sqltools
+2025-02-20 01:49:31.309 [info] Renamed to /home/chris/.vscode-oss/extensions/mtxr.sqltools-0.28.4-universal
+2025-02-20 01:49:31.334 [info] Extension installed successfully: mtxr.sqltools vscode-userdata:/home/chris/.vscode-oss/extensions/extensions.json
+2025-02-20 01:49:52.802 [info] Getting Manifest... mtxr.sqltools-driver-pg
+2025-02-20 01:49:53.618 [info] Installing extension: mtxr.sqltools-driver-pg {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/home/chris/.vscode-oss/extensions/extensions.json","path":"/home/chris/.vscode-oss/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.97.2","date":"2025-02-14T18:21:12.766Z"}}
+2025-02-20 01:49:54.434 [info] Getting Manifest... mtxr.sqltools
+2025-02-20 01:49:56.337 [info] Extracted extension to file:///home/chris/.vscode-oss/extensions/mtxr.sqltools-driver-pg-0.5.5-universal: mtxr.sqltools-driver-pg
+2025-02-20 01:49:56.343 [info] Renamed to /home/chris/.vscode-oss/extensions/mtxr.sqltools-driver-pg-0.5.5-universal
+2025-02-20 01:49:56.367 [info] Extension installed successfully: mtxr.sqltools-driver-pg vscode-userdata:/home/chris/.vscode-oss/extensions/extensions.json

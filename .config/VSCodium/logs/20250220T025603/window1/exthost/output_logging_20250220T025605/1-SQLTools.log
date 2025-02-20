@@ -1,0 +1,369 @@
+[1740000366185] INFO  (ext): SQLTools is starting
+[1740000366188] INFO  (ext): initializing language client...
+[1740000366190] INFO  (ext): Registering client for languages [{"scheme":"sqltools"},{"language":"sql","scheme":"untitled"},{"language":"sql","scheme":"file"},{"language":"sql","scheme":"sqltools"}]
+    ns: "lc"
+[1740000366199] INFO  (ext): loading plugins...
+[1740000366199] INFO  (ext): registering Formatter Plugin.
+    plugin: {
+      "name": "Formatter Plugin"
+    }
+[1740000366200] INFO  (ext): registering Connection Manager Plugin.
+    plugin: {
+      "name": "Connection Manager Plugin"
+    }
+[1740000366201] INFO  (ext): registering CodeLens Plugin.
+    plugin: {
+      "name": "CodeLens Plugin",
+      "registeredLanguages": []
+    }
+[1740000366204] INFO  (ext): registering Dependency Manager Plugin.
+    plugin: {
+      "name": "Dependency Manager Plugin",
+      "installingDrivers": []
+    }
+[1740000366207] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740000366209] INFO  (ext): registering History Manager Plugin.
+    plugin: {
+      "name": "History Manager Plugin"
+    }
+[1740000366210] INFO  (ext): registering Bookmarks Manager Plugin.
+    plugin: {
+      "name": "Bookmarks Manager Plugin"
+    }
+[1740000366211] INFO  (ext): registering Authentication Provider Plugin.
+    plugin: {
+      "name": "Authentication Provider Plugin",
+      "isRegistered": false
+    }
+[1740000366211] INFO  (ext): registering Object Drop-in Provider (plugin).
+    plugin: {
+      "type": "plugin",
+      "name": "Object Drop-in Provider",
+      "isRegistered": false
+    }
+[1740000366214] INFO  (ext): SQLTools activation completed. 27.738824 ms
+[1740000366214] INFO  (ext): Formatter Plugin registered!
+[1740000366214] INFO  (ext): CodeLens Plugin registered!
+[1740000366214] INFO  (ext): Dependency Manager Plugin registered!
+[1740000366214] INFO  (ext): Connection Manager Plugin registered!
+[1740000366215] INFO  (ext): History Manager Plugin registered!
+[1740000366215] INFO  (ext): Bookmarks Manager Plugin registered!
+[1740000366215] INFO  (ext): Authentication Provider Plugin registered!
+[1740000366215] INFO  (ext): Object Drop-in Provider (plugin) registered!
+[1740000366355] INFO  (ext): registering PostgreSQL/Cockroach Plugin (driver).
+    plugin: {
+      "extensionId": "mtxr.sqltools-driver-pg",
+      "name": "PostgreSQL/Cockroach Plugin",
+      "type": "driver"
+    }
+[1740000366521] INFO  (ls): SQLTools Server started!
+===============================
+Using node runtime?: no
+ExecPath: /opt/vscodium-bin/codium 
+===============================
+[1740000366577] INFO  (ext): LanguageClient ready
+    ns: "lc"
+[1740000366574] INFO  (ls): Initialized with node version:v20.18.1
+[1740000366581] INFO  (ls): REQUEST RECEIVED => ls/RegisterPlugin
+[1740000366581] INFO  (ls): request to register plugin: "/home/chris/.vscode-oss/extensions/mtxr.sqltools-driver-pg-0.5.5-universal/out/ls/plugin.js"
+[1740000366648] INFO  (ls): Driver postgresql registered!
+    place: "driver-map"
+    ns: "ls-context"
+[1740000366649] INFO  (ls): Driver aws redshift registered!
+    place: "driver-map"
+    ns: "ls-context"
+[1740000366649] INFO  (ls): Driver cockroachdb registered!
+    place: "driver-map"
+    ns: "ls-context"
+[1740000366683] INFO  (ext): PostgreSQL/Cockroach Plugin (driver) registered!
+[1740000367684] INFO  (ext): EXECUTING COMMAND => sqltools.refreshTree
+[1740000367684] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740000368208] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740000399978] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740000399979] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000399980] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000399981] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000399983] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000414628] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000414629] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000414630] INFO  (ls): REQUEST RECEIVED => connection/ConnectRequest
+[1740000414631] INFO  (ls): Connection instance created for Test.
+    ns: "conn-manager"
+[1740000414658] INFO  (ext): Connection explorer changed. Will be updated.
+    ns: "conn-man:explorer"
+[1740000414658] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000414658] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000415173] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000415173] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000415178] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740000442982] INFO  (ls): completion requested {"line":3,"character":6}
+    ns: "intellisense"
+[1740000443136] INFO  (ls): completion requested {"line":3,"character":7}
+    ns: "intellisense"
+[1740000443201] INFO  (ls): completion requested {"line":3,"character":8}
+    ns: "intellisense"
+[1740000443333] INFO  (ls): completion requested {"line":3,"character":9}
+    ns: "intellisense"
+[1740000447813] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740000447814] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000447814] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000447819] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000447819] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000448325] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000448326] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000448332] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740000460238] INFO  (ls): completion requested {"line":3,"character":1}
+    ns: "intellisense"
+[1740000460768] INFO  (ls): completion requested {"line":3,"character":3}
+    ns: "intellisense"
+[1740000461002] INFO  (ls): completion requested {"line":3,"character":4}
+    ns: "intellisense"
+[1740000461049] INFO  (ls): completion requested {"line":3,"character":5}
+    ns: "intellisense"
+[1740000461650] INFO  (ls): completion requested {"line":3,"character":6}
+    ns: "intellisense"
+[1740000461802] INFO  (ls): completion requested {"line":3,"character":7}
+    ns: "intellisense"
+[1740000461998] INFO  (ls): completion requested {"line":3,"character":8}
+    ns: "intellisense"
+[1740000462233] INFO  (ls): completion requested {"line":3,"character":9}
+    ns: "intellisense"
+[1740000462318] INFO  (ls): completion requested {"line":3,"character":10}
+    ns: "intellisense"
+[1740000465496] INFO  (ls): completion requested {"line":3,"character":1}
+    ns: "intellisense"
+[1740000472700] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740000472700] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000472701] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000472705] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000472705] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000473212] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000473213] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000473217] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740000484597] INFO  (ls): completion requested {"line":3,"character":1}
+    ns: "intellisense"
+[1740000484960] INFO  (ls): completion requested {"line":3,"character":2}
+    ns: "intellisense"
+[1740000485277] INFO  (ls): completion requested {"line":3,"character":3}
+    ns: "intellisense"
+[1740000485462] INFO  (ls): completion requested {"line":3,"character":4}
+    ns: "intellisense"
+[1740000485647] INFO  (ls): completion requested {"line":3,"character":5}
+    ns: "intellisense"
+[1740000486126] INFO  (ls): completion requested {"line":3,"character":6}
+    ns: "intellisense"
+[1740000486575] INFO  (ls): completion requested {"line":3,"character":6}
+    ns: "intellisense"
+[1740000486627] INFO  (ls): completion requested {"line":3,"character":7}
+    ns: "intellisense"
+[1740000490106] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740000490107] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000490107] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000490111] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000490112] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000490617] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000490618] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000490622] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740000503829] INFO  (ls): completion requested {"line":3,"character":7}
+    ns: "intellisense"
+[1740000504260] INFO  (ls): completion requested {"line":3,"character":8}
+    ns: "intellisense"
+[1740000504673] INFO  (ls): completion requested {"line":3,"character":9}
+    ns: "intellisense"
+[1740000504777] INFO  (ls): completion requested {"line":3,"character":10}
+    ns: "intellisense"
+[1740000513278] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740000513278] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000513279] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000513283] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000513284] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000513790] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000513791] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000513795] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740000585018] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740000585018] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000585019] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000585022] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000585023] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000585528] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000585528] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000585532] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740000618224] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740000618225] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000618225] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000618230] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000618231] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000618737] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000618738] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000618743] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740000733125] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740000733126] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000733126] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000733130] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000733131] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000733636] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740000733637] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740000733641] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740001062142] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740001062142] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001062143] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001062147] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001062147] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001062654] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001062655] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001062660] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740001117136] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740001117137] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001117137] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001117141] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001117141] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001117647] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001117648] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001117652] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740001158713] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740001158713] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001158714] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001158718] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001158719] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001159225] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001159226] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001159230] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740001199113] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740001199113] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001199113] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001199117] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001199117] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001199622] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001199622] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001199626] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740001237711] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740001237712] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001237712] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001237718] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001237718] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001238224] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001238225] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001238229] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740001260710] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740001260710] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001260711] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001260715] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001260715] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001261222] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001261222] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001261228] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740001297407] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740001297408] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001297409] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001297413] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001297413] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001297919] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001297920] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001297925] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740001357325] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740001357325] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001357325] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001357330] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001357330] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001357836] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001357837] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001357842] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740001389606] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740001389606] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001389607] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001389611] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001389611] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001390117] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001390118] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001390123] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740001573226] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740001573226] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001573227] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001573230] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001573231] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001573737] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001573737] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001573744] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740001607275] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740001607275] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001607276] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001607280] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001607281] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001607788] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001607789] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001607793] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740001681905] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740001681906] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001681906] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001681910] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001681910] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001682417] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740001682418] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740001682422] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740002190732] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740002190732] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002190733] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002190737] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002190738] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002191242] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002191243] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002191246] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740002264596] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740002264597] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002264597] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002264601] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002264602] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002265109] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002265110] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002265116] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740002303760] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740002303760] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002303761] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002303764] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002303764] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002304270] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002304271] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002304277] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740002362660] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740002362661] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002362662] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002362665] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002362666] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002362825] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740002362825] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002362825] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002362829] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002362829] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002363172] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002363173] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002363178] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740002363334] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002363335] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002363340] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740002424589] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740002424589] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002424590] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002424594] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002424595] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002425100] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002425101] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002425105] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740002465118] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740002465118] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002465119] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002465123] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002465123] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002465628] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002465629] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002465634] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest
+[1740002545874] INFO  (ext): EXECUTING COMMAND => sqltools.executeQuery
+[1740002545874] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002545875] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002545878] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002545879] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002546383] INFO  (ext): EXECUTING COMMAND => sqltools.getConnections
+[1740002546384] INFO  (ls): REQUEST RECEIVED => connection/GetConnectionsRequest
+[1740002546389] INFO  (ls): REQUEST RECEIVED => connection/RunCommandRequest

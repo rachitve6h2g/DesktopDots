@@ -1,4 +1,8 @@
-require("eza-preview"):setup({})
+require("eza-preview"):setup({
+	level = 3,
+	follow_symlinks = false,
+	dereference = false,
+})
 
 local gruvbox_material_theme = require("yatline-gruvbox-material"):setup({ mode = "dark", toughness = "hard" })
 require("yatline"):setup({
