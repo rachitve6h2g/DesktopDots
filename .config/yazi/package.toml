@@ -28,6 +28,11 @@ use = "boydaihungst/restore"
 rev = "89fddfd"
 hash = "b442aa672e07ec0765b4b00e7bfdc9b5"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:git"
+rev = "781a798"
+hash = "771f18427fb75fb19990ce602bb322f4"
+
 [[flavor.deps]]
 use = "bennyyip/gruvbox-dark"
 rev = "b4cc9f2"
