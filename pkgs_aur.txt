@@ -2,7 +2,6 @@ bibata-cursor-theme-bin
 bluetuith-bin
 epub-thumbnailer-git
 firefox-extension-arch-search
-grimshot-bin-sway
 gruvbox-plus-icon-theme-git
 lswt
 networkmanager-dmenu-git
@@ -11,7 +10,6 @@ parabolic-gtk
 paru
 paru-debug
 peaclock
-swaylock-effects
 vscodium-bin
 xdg-desktop-portal-termfilechooser-hunkyburrito-git
 zsh-fast-syntax-highlighting
