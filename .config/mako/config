@@ -12,7 +12,7 @@ border-radius=10
 border-color=#d8a657ee
 progress-color=over #504945ee
 icons=1
-icon-path=/usr/share/icons/Gruvbox-Plus-Dark
+icon-path=/home/krish/.local/share/icons/Gruvbox-Plus-Dark
 markup=1
 
 default-timeout=5000

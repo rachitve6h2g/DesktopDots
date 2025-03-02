@@ -17,7 +17,7 @@
         "clock",
     ],
     "modules-right": [
-        "mpd",
+        //"mpd",
         "pulseaudio",
         "network",
         "power-profiles-daemon",
@@ -130,9 +130,9 @@
     "battery": {
         "interval": 1,
         "states": {
-            // "good": 95,
+            "good": 80,
             "warning": 30,
-            "critical": 15
+            "critical": 20
         },
         "format": "{capacity}% <span size='12pt'>{icon}</span>",
         "format-full": "{capacity}% <span size='12pt'>{icon}</span>",
@@ -142,9 +142,9 @@
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": [
-            "<span foreground = '#ea6962'> </span>",
-            "<span foreground = '#ea6962'> </span>",
-            "<span foreground = '#d8a657'> </span>",
+            "<span foreground = '#f38ba8'> </span>",
+            "<span foreground = '#f38ba8'> </span>",
+            "<span foreground = '#f9e2af'> </span>",
             " ",
             " "
         ]
@@ -166,7 +166,7 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         //"format-wifi": "{essid} ({signalStrength}%)  ",
-        "format-wifi": "<span color = '#a9b655' size='12pt'> </span> {essid}",
+        "format-wifi": "<span color = '#a6e3a1' size='12pt'> </span> {essid}({signalStrength}%)",
         "on-click": "killall nm-connection-editor || exec uwsm app -- nm-connection-editor.desktop",
         "format-ethernet": "{ipaddr}/{cidr}  ",
         //"tooltip-format": "{ifname} via {gwaddr} ",

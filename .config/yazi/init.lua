@@ -4,9 +4,9 @@ require("eza-preview"):setup({
 	dereference = false,
 })
 
-local gruvbox_material_theme = require("yatline-gruvbox-material"):setup({ mode = "dark", toughness = "hard" })
+local catppuccin_theme = require("yatline-catppuccin"):setup("mocha")
 require("yatline"):setup({
-	theme = gruvbox_material_theme,
+	theme = catppuccin_theme,
 	section_separator = { open = "", close = "" },
 	part_separator = { open = "", close = "" },
 	inverse_separator = { open = "", close = "" },
@@ -97,7 +97,7 @@ require("yatline"):setup({
 
 require("full-border"):setup({
 	-- Available values: ui.Border.PLAIN, ui.Border.ROUNDED
-	type = ui.Border.PLAIN,
+	type = ui.Border.ROUNDED,
 })
 
 -- For seeing time and size

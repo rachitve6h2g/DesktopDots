@@ -26,5 +26,6 @@
             "before": ["<Esc>"],
             "after": [":nohlsearch"]
         }
-    ]
+    ],
+    "redhat.telemetry.enabled": true
 }

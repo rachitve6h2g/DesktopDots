@@ -1,14 +1,15 @@
+@import "mocha.css";
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: IosevkaTermNerdFont;
     font-size: 13px;
-    color: #ddc7a1;
+    color: @text;
 }
 
 window#waybar {
-    background-color: #141617;
+    background-color: @base;
     /*border-bottom: 3px solid rgba(100, 114, 125, 0.5);*/
-    color: #ddc7a1;
+    color: @text;
     transition-property: background-color;
     transition-duration: .5s;
     margin-top: 0px;
@@ -29,7 +30,7 @@ window#waybar.solo {
 
 #workspaces {
     padding: 0px;
-    background-color: #504945;
+    background-color: @surface2;
     margin-bottom: 5px;
     margin-top: 5px;
     /*padding-left: 10px;*/
@@ -44,22 +45,22 @@ window#waybar.solo {
 /*}*/
 
 #workspaces button.active {
-    color: #d8a657;
+    color: @yellow;
     /*box-shadow: inset 0 -3px #ffffff;*/
 
 }
 
 #workspaces button.empty {
-    color: #282828;
+    color: @surface0;
 }
 
 #workspaces button.urgent {
-    background-color: #ea6962;
+    background-color: @red;
 }
 
 #mode {
-    background-color: #d8a657;
-    color: #141617;
+    background-color: @yellow;
+    color: @base;
     border-radius: 5px;
     margin: 8px 0px;
     padding: 0px 5px;
@@ -79,7 +80,7 @@ window#waybar.solo {
 #power-profiles-daemon,
 #mpd {
     padding: 0 10px;
-    color: #d4be98;
+    color: @text;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -93,8 +94,8 @@ window#waybar.solo {
 }
 
 #clock {
-    background-color: #d4be98;
-    color: #141617;
+    background-color: @text;
+    color: @base;
     border-radius: 20px;
     padding: 0px 5px;
     margin: 8px 10px;
@@ -109,8 +110,8 @@ window#waybar.solo {
 }
 
 #battery.charging, #battery.plugged {
-    color: #282828;
-    background-color: #a9b665;
+    color: @surface0;
+    background-color: @green;
 }
 
 @keyframes blink {
@@ -122,8 +123,8 @@ window#waybar.solo {
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    background-color: #ea6962;
-    color: #282828;
+    background-color: @red;
+    color: @surface0;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -137,17 +138,17 @@ window#waybar.solo {
 
 #power-profiles-daemon.performance {
     /*background-color: #f53c3c;*/
-    color: #ea6962;
+    color: @red;
 }
 
 #power-profiles-daemon.balanced {
     /*background-color: #2980b9;*/
-    color: #d8a657;
+    color: @yellow;
 }
 
 #power-profiles-daemon.power-saver {
     /*background-color: #2ecc71;*/
-    color: #a9b665;
+    color: @green;
 }
 
 label:focus {
@@ -176,12 +177,12 @@ label:focus {
 }
 
 #network.wifi {
-    background-color: #32302f;
+    background-color: @surface0;
     border-radius: 30px;
 }
 
 #network.disconnected {
-    color: #ea6962;
+    color: @red;
 }
 
 #pulseaudio {
@@ -191,7 +192,7 @@ label:focus {
 
 #pulseaudio.muted {
     /*background-color: #90b1b1;*/
-    color: #ea6962;
+    color: @red;
 }
 
 #wireplumber {
@@ -205,7 +206,7 @@ label:focus {
 
 #custom-media {
     /*background-color: #66cc99;*/
-    /*color: #2a5c45;*/
+    /*color: @teal;*/
     min-width: 100px;
 }
 
@@ -242,12 +243,12 @@ label:focus {
     padding: 0 10px;
 }
 #idle_inhibitor.activated {
-    color: #ea6962;
+    color: @red;
 }
 
 #mpd {
     /*background-color: #66cc99;*/
-    color: #2a5c45;
+    color: @teal;
 }
 
 #mpd.disconnected {

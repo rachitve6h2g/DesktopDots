@@ -484,6 +484,7 @@ require("lazy").setup({
 			{ "williamboman/mason.nvim", config = true }, -- NOTE: Must be loaded before dependants
 			"williamboman/mason-lspconfig.nvim",
 			"WhoIsSethDaniel/mason-tool-installer.nvim",
+			"nvim-java/nvim-java",
 
 			-- Useful status updates for LSP.
 			-- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
@@ -656,7 +657,10 @@ require("lazy").setup({
 				-- But for many setups, the LSP (`ts_ls`) will work just fine
 				-- ts_ls = {},
 				--
-
+				hyprls = {
+					cmd = { "hyprls", "--stdio" },
+					filetypes = { "hyprlang" },
+				},
 				lua_ls = {
 					-- cmd = {...},
 					-- filetypes = { ...},
@@ -698,6 +702,29 @@ require("lazy").setup({
 						-- certain features of an LSP (for example, turning off formatting for ts_ls)
 						server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
 						require("lspconfig")[server_name].setup(server)
+					end,
+					jdtls = function()
+						require("java").setup({
+							-- Your custom jdtls settings goes here
+							jdk = {
+								auto_install = false,
+							},
+
+							java = {
+								configuration = {
+									runtimes = {
+										{
+											name = "JavaSE-17",
+											path = "/usr/lib/jvm/java-17-openjdk/",
+										},
+									},
+								},
+							},
+						})
+
+						require("lspconfig").jdtls.setup({
+							-- Your custom nvim-java configuration goes here
+						})
 					end,
 				},
 			})
@@ -875,7 +902,7 @@ require("lazy").setup({
 				light = "latte",
 			},
 
-			transparent_background = false,
+			transparent_background = true,
 			show_end_of_buffer = false,
 			term_colors = false,
 			dim_inactive = {
@@ -956,7 +983,13 @@ require("lazy").setup({
 		},
 		config = function(_, opts)
 			require("catppuccin").setup(opts)
+			function LineNumberColors()
+				vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#89b4fa", bold = true })
+				vim.api.nvim_set_hl(0, "LineNr", { fg = "#bac2de", bold = true })
+				vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#cba6f7", bold = true })
+			end
 			vim.cmd.colorscheme("catppuccin")
+			LineNumberColors()
 		end,
 	},
 
@@ -1023,6 +1056,7 @@ require("lazy").setup({
 				"query",
 				"vim",
 				"vimdoc",
+				"java",
 			},
 			-- Autoinstall languages that are not installed
 			auto_install = true,
@@ -1098,4 +1132,10 @@ require("lazy").setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
--- vim.cmd.colorscheme("catppuccin")
+function LineNumberColors()
+	vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#89b4fa", bold = true })
+	vim.api.nvim_set_hl(0, "LineNr", { fg = "#bac2de", bold = true })
+	vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#cba6f7", bold = true })
+end
+vim.cmd.colorscheme("catppuccin")
+LineNumberColors()

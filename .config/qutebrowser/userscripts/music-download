@@ -1,0 +1,4 @@
+#!/bin/bash
+kitty -e "yt-dlp -f bestaudio -x --audio-format mp3 --audio-quality 0 \
+        --external-downloader aria2c --external-downloader-args aria2c:\"-c -s16 -x16 -k1M\" -o \"~/Music/%(title)s.%(ext)s\" \
+        --add-metadata --embed-thumbnail "$1""

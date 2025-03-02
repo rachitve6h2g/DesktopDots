@@ -33,6 +33,28 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# For yt-dlp
+function yt-download() {
+    case "$1" in
+        -v)
+            yt-dlp -f bestvideo+bestaudio --merge-output-format mp4 \
+                   --external-downloader aria2c \
+                   --external-downloader-args "-c --conf-path=${HOME}/aria2c.conf" \
+                   -o "${HOME}/Videos/yt-dlp/%(title)s.%(ext)s" "$2"
+            ;;
+        -a)
+            yt-dlp -f bestaudio --extract-audio --audio-format mp3 \
+                   --audio-quality 0 \
+                   --external-downloader aria2c \
+                   --external-downloader-args "-c --conf-path=${HOME}/aria2c.conf" \
+                   -o "${HOME}/Music/%(title)s.%(ext)s" "$2"
+            ;;
+        *)
+            echo "Usage: yt-download -v <video-url> or yt-download -a <audio-url>"
+            ;;
+    esac
+}
+
 # For the zsh pacman hook
 zshcache_time="$(date +%s%N)"
 
@@ -49,6 +71,13 @@ rehash_precmd() {
 }
 
 add-zsh-hook -Uz precmd rehash_precmd
+
+autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+
+[[ -n "${key[Up]}"   ]] && bindkey -- "${key[Up]}"   up-line-or-beginning-search
+[[ -n "${key[Down]}" ]] && bindkey -- "${key[Down]}" down-line-or-beginning-search
 
 # This should be at the end of the .zshrc file
 eval "$(starship init zsh)"

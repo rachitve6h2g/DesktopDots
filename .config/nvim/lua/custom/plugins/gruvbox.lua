@@ -7,12 +7,6 @@ return {
 			-- Optionally configure and load the colorscheme
 			-- directly inside the plugin declaration.
 
-			function LineNumberColors()
-				vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#7daea3", bold = true })
-				vim.api.nvim_set_hl(0, "LineNr", { fg = "#ddc7a1", bold = true })
-				vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#d3869b", bold = true })
-			end
-
 			local options = {
 				gruvbox_material_enable_italic = true,
 				gruvbox_material_background = "hard",
@@ -23,8 +17,8 @@ return {
 			for k, v in pairs(options) do
 				vim.g[k] = v
 			end
-			vim.cmd.colorscheme("gruvbox-material")
-			LineNumberColors()
+			-- vim.cmd.colorscheme("gruvbox-material")
+			-- LineNumberColors()
 		end,
 	},
 }

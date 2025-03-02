@@ -6,5 +6,46 @@
 
 config_version: 2
 settings:
+  bindings.commands:
+    global:
+      normal:
+        <Ctrl+/>: hint links spawn --detach mpv {hint-url}
+        ya: hint links spawn --detach yt-dlp -f bestaudio -x --audio-format mp3 --audio-quality
+          0 --external-downloader aria2c --external-downloader-args aria2c:"-c -s16
+          -x16 -k1M" -o "~/Music/%(title)s.%(ext)s" --add-metadata --embed-thumbnail
+          {hint-url}
+        yv: hint links spawn --verbose --output-messages yt-dlp --external-downloader
+          aria2c --add-metadata -o $HOME/Videos/Yt-Dlp/%(title)s-%(id)s%.%(ext)s {hint-url}
   colors.webpage.preferred_color_scheme:
     global: dark
+  content.blocking.method:
+    global: both
+  content.notifications.enabled:
+    https://learn.younity.in: false
+    https://web.telegram.org: false
+    https://web.whatsapp.com: true
+    https://www.pw.live: true
+    https://www.youtube.com: false
+  content.register_protocol_handler:
+    https://mail.google.com?extsrc=mailto&url=%25s: true
+  content.webgl:
+    global: false
+  editor.command:
+    global:
+    - nvim
+    - -f
+    - '{file}'
+    - -c
+    - normal {line}G{column0}l
+  fileselect.folder.command:
+    global:
+    - kitty
+    - -e
+    - yazi
+    - --choosedir={}
+  url.searchengines:
+    global:
+      DEFAULT: https://duckduckgo.com/?q={}
+      chatgpt: https://chat.openai.com/?q={}
+      wa: https://wiki.archlinux.org/?search={}
+      yt: https://www.youtube.com/results?search_query={}

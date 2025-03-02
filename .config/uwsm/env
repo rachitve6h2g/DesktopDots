@@ -4,3 +4,9 @@ export MOZ_ENABLE_WAYLAND=1
 export LIBVA_DRIVER_NAME=iHD
 export QT_QPA_PLATFORM=wayland
 export QT_QPA_PLATFORMTHEME=qt5ct
+
+export XCURSOR_THEME=Bibata-Modern-Classic
+
+export ELECTRON_OZONE_PLATFORM_HINT='wayland'
+
+export GTK_THEME='Catppuccin-Mocha-Mauve'

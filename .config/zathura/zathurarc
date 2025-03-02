@@ -1,4 +1,4 @@
-set font                    "IosevkaTerm Nerd Font Mono 12"
+set font                    "IosevkaTerm Nerd Font Mono 10"
 set selection-notification	"true"
 set selection-clipboard		"clipboard"
 set guioptions			    "sv"

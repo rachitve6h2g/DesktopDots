@@ -13,5 +13,7 @@ prepend_keymap = [
 
   # Just for restoring a deleted file/folder
   { on = "u", run = "plugin restore", desc = "Restore from trash"},
-  
+
+  # Smart enter plugin
+  { on = "l", run = "plugin smart-enter", desc = "Enter the child directory, or open the file" },
 ]
