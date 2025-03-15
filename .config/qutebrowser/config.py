@@ -21,11 +21,6 @@ c.downloads.position = 'bottom'
 config.bind('<Ctrl+/>', 'hint links spawn --detach mpv {hint-url}')
 
 # For yt-dl
-config.bind('yv', 'hint links spawn --verbose --output-messages yt-dlp --external-downloader aria2c --add-metadata -o $HOME/Videos/Yt-Dlp/%(title)s-%(id)s%.%(ext)s {hint-url}')
+config.bind('ya', 'spawn --userscript audio_download')
 
-# For audio download
-# config.bind('ya', 'hint links spawn --verbose --output-messages yt-dlp -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 --external-downloader aria2c --downlader aria2c --external-downloader-args aria2c:"-c --conf-path=${HOME}/.config/aria2/aria2c.conf" -o "${HOME}/Music/%(title)s.%(ext)s" --add-metadata --embed-thumbnail {hint-url}')
-# config.bind('ya', 'hint links spawn --verbose --output-messages --detach yt-dlp -f bestaudio -x --audio-format mp3 --audio-quality 0 --external-downloader aria2c --external-downloader-args aria2c:"-c -s16 -x16 -k1M" -o "~/Music/%(title)s.%(ext)s" --add-metadata --embed-thumbnail {hint-url}')
-config.bind('ya', 'hint links spawn --userscript music-download {hint-url}')
-
-
+c.url.searchengines['gw'] = 'https://wiki.gentoo.org/index.php?search={}'

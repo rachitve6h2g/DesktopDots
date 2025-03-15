@@ -1,4 +1,6 @@
 source $ZDOTDIR/aliases.zsh
+source /usr/share/fzf/key-bindings.zsh
+source $ZDOTDIR/fzf_catppuccin.zsh
 # For the vim keybindings in zsh set the editor variable
 export EDITOR='nvim'
 
@@ -14,13 +16,23 @@ export ZSH_CUSTOM=$XDG_CONFIG_HOME/zsh
 export LESS='-R --use-color -Dd+r$Du+b$'
 export MANPAGER='nvim +Man!'
 
+# For TASKWARRIOR stuff
+export TASKDATA=$XDG_DATA_HOME/task
+# And for app-misc/vit
+export VIT_DIR=$XDG_CONFIG_HOME/vit
+
 autoload -Uz compinit
 compinit
 zstyle ':completion::complete:*' gain-privileges 1
 
 
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+# source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# For gentoo
+source /usr/share/zsh/site-functions/zsh-autosuggestions.zsh
+
+# source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source $ZDOTDIR/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 ZSH_AUTOSUGGEST_STRATEGY=(completion)
 
 # For yazi
