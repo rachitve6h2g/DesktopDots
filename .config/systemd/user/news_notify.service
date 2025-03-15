@@ -1,0 +1,8 @@
+[Unit]
+Description=Newsboat RSS fetcher and notifier
+After=network-online.target
+
+[Service]
+ExecStart=%h/.local/bin/news_notify.sh
+Type=oneshot
+
